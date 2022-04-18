@@ -1,0 +1,30 @@
+
+Inheritance is a relationship and composition is a "HAS A" relationship.
+
+There are some disadvantages working with inheritance
+
+1.A subclass can’t reduce the interface of the superclass.
+
+2.• When overriding methods you need to make sure that the
+new behavior is compatible with the base one
+
+3.• Inheritance breaks encapsulation of the superclass
+
+4. Subclasses are tightly coupled to superclasses
+
+5.• Trying to reuse code through inheritance can lead to creating parallel inheritance hierarchies
+
+https://www.geeksforgeeks.org/favoring-composition-over-inheritance-in-java-with-examples/
+
+Person {name,age}
+
+	 ||
+Employee{eid, name, salary} -------> is a/ inheritance
+	||
+
+Manager{eid,team}
+
+--------------------------------------
+
+Employee{ eid, salary , Person p}
+Manager {team, Employee e} -----------> has a / composition
